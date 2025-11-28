@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Xiaomi Zhou - get in touch about projects, collaborations, or questions">
+    <title>Contact | Xiaomi Zhou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <a class="skip" href="#maincontent">Skip to Main Content</a>
+
+    <header>
+        <nav class="navbar">
+                <div class="container">
+                <a href="index.html" class="nav-logo">Xiaomi Zhou</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Contact</h1>
+                <p class="subtitle">I'd love to hear from you — questions, collaborations, or opportunities</p>
+            </div>
+        </section>
+    </header>
+
+    <main id="maincontent">
+        <section class="section">
+            <div class="container">
+                <h2>Send a Message</h2>
+                <div class="form-card">
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/xangdydw" method="POST">
+                        <div class="form-row">
+                            <label for="name">Full name</label>
+                            <input id="name" name="name" type="text" required placeholder="Your name" aria-required="true">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="email">Email address</label>
+                            <input id="email" name="email" type="email" required placeholder="you@example.com" aria-required="true">
+                        </div>
+
+                        <div class="form-row">
+                            <label for="subject">Subject</label>
+                            <input id="subject" name="subject" type="text" maxlength="150" placeholder="Short subject" required>
+                        </div>
+
+                        <div class="form-row">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="8" required minlength="10" maxlength="3000" placeholder="Write your message here"></textarea>
+                        </div>
+
+                        <div class="form-row">
+                            <button type="submit" class="cta-button">Send Message</button>
+                            <button type="reset" class="cta-button">Reset</button>
+                        </div>
+
+                        <div id="formStatus" role="status" aria-live="polite"></div>
+                    </form>
+                </div>
+
+                <p style="margin-top:1rem;">Prefer email? Contact me at <a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Xiaomi Zhou</h3>
+                <p>MS in Electrical and Computer Engineering</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Xiaomi Zhou. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const form = document.getElementById('contactForm');
+        const status = document.getElementById('formStatus');
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (!form.checkValidity()) {
+                form.reportValidity();
+                return;
+            }
+
+            // Simulate successful send (no backend in this site)
+            const name = document.getElementById('name').value;
+            status.style.display = 'block';
+            status.textContent = `Thanks${' ' + (name.split(' ')[0] || '')}! Your message was sent.`;
+
+            // Clear form after a short delay to allow user to read message
+            setTimeout(() => {
+                form.reset();
+            }, 800);
+
+            // Hide status after 6 seconds
+            setTimeout(() => {
+                status.style.display = 'none';
+                status.textContent = '';
+            }, 6000);
+        });
+
+    </script>
+</body>
+</html>

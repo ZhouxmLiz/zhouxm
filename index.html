@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xiaomi Zhou's personal portfolio - MS in Electrical and Computer Engineering">
+    <title>Xiaomi Zhou | ECE Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <a class="skip" href="#maincontent">Skip to Main Content</a>
+    
+    <header>
+        <nav class="navbar">
+                <div class="container">
+                <a href="index.html" class="nav-logo">Xiaomi Zhou</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to My Portfolio</h1>
+                <p class="subtitle">Master's Student in Electrical and Computer Engineering</p>
+            </div>
+        </section>
+    </header>
+
+    <main id="maincontent">
+        <section class="intro">
+            <div class="intro-container">
+                <div class="intro-image">
+                    <img src="img/selfie.png" alt="Portrait of Xiaomi Zhou">
+                </div>
+                <div class="intro-text">
+                    <h2>Hello! I'm Xiaomi Zhou</h2>
+                    <p>I'm a passionate master's student in Electrical and Computer Engineering (ECE) at the University of Michigan. This website showcases my projects, experiences, and expertise.</p>
+                    <p>I'm interested in computer architecture, VLSI, and embedded systems. Feel free to explore my work and get in touch!</p>
+                    <a href="aboutme.html" class="cta-button">Explore</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Xiaomi Zhou</h3>
+                <p>MS in Electrical and Computer Engineering</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/xiaomi-zhou-228a4b295" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/ZhouxmLiz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Xiaomi Zhou. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

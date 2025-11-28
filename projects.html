@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Xiaomi Zhou's personal portfolio - MS in Electrical and Computer Engineering">
+    <title>Projects | Xiaomi Zhou</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <a class="skip" href="#maincontent">Skip to Main Content</a>
+    
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="nav-logo">Xiaomi Zhou</a>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="aboutme.html" class="nav-link">About Me</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Projects</h1>
+                <p class="subtitle">Master's Student in Electrical and Computer Engineering</p>
+            </div>
+        </section>
+    </header>
+
+    <main id="maincontent">
+        <section class="section">
+            <div class="container">
+                <h2>VLSI Projects</h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Sep-Dec 2025</div></div>
+                        <div class="list-right">
+                            <h3>FlashAttention Accelerator with Systolic Array</h3>
+                            <div class="meta">In progress · VLSI / Accelerator</div>
+                            <p class="project-description">Designed and validated a systolic-array architecture for efficient MAC computation and row-max extraction. Implemented an exponential lookup table (exp LUT), integrated it into the pipeline, and developed control logic and dataflow. Verified functionality against a software reference model.</p>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Sep-Dec 2025</div></div>
+                        <div class="list-right">
+                            <h3>RISC Processor with Custom 6T SRAM</h3>
+                            <div class="meta">In progress · VLSI / RTL & Layout</div>
+                            <p class="project-description">Implemented RTL modules and custom 6T SRAM layout in Cadence Virtuoso. Used APR to synthesize the controller and program counter; completed layout and verification for RF, ALU, shifter, and SRAM blocks.</p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Computer Architecture Projects</h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Oct-Dec 2024</div></div>
+                        <div class="list-right">
+                            <h3>Two-way Superscalar R10K Processor</h3>
+                            <div class="meta">Computer Architecture · RTL</div>
+                            <p class="project-description">Implemented core R10K modules in Verilog (map table, free list, ROB, RS, execute stage). Added early branch resolution, non-blocking caches, instruction prefetching, and LSQ to increase throughput. Integrated and verified modules using Verdi for waveform analysis and debugging.</p>
+                            <p><a href="./rpt/470_report.pdf" class="project-link">View Project</a></p>
+                        </div>
+                    </li>
+
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Feb-Apr 2025</div></div>
+                        <div class="list-right">
+                            <h3>Formal Verification & Improvement of MOESI-PCD</h3>
+                            <div class="meta">Formal Verification · Coherence Protocols</div>
+                            <p class="project-description">Extended MESI to MOESI-PCD by adding a D state to improve producer–consumer patterns. Modeled and verified protocol correctness using Murphi and evaluated performance improvements in multi-core cache coherence.</p>
+                            <p><a href="./rpt/570_report.pdf" class="project-link">View Project</a></p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Embedded Systems Projects</h2>
+                <ul class="list">
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Mar-Apr 2024</div></div>
+                        <div class="list-right">
+                            <h3>Adaptive Cruise Control Implementation</h3>
+                            <div class="meta">Embedded Systems</div>
+                            <p class="project-description">Built vehicle models and controllers in MATLAB/Simulink (adaptive cruise and steering). Implemented CAN communication and deployed the controller on an STM32 board. Integrated driving simulation for validation and verified real-time performance.</p>
+                        </div>
+                    </li>
+                    <li class="list-item">
+                        <div class="list-left"><div class="item-badge">Feb-Apr 2024</div></div>
+                        <div class="list-right">
+                            <h3>BicycLED: An assisting device for cyclists</h3>
+                            <div class="meta">Embedded Systems · Hardware</div>
+                            <p class="project-description">Developed device drivers (I2C accelerometer, PWM buzzer, SPI radar) in C, deployed on an Nucleo-L432KC board, and implemented multithreaded sensor acquisition. Designed the enclosure in SolidWorks and fabricated parts using 3D printing and laser cutting.</p>
+                            <p><a href="./rpt/373_report.pdf" class="project-link">View Project</a></p>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Add more projects as needed -->
+            </div>
+        </section>
+        <!-- Add more sections for different types of projects (e.g., research, coursework) -->
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Xiaomi Zhou</h3>
+                <p>MS in Electrical and Computer Engineering</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/xiaomi-zhou-228a4b295" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/ZhouxmLiz" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Xiaomi Zhou. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
