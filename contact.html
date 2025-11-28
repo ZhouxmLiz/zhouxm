@@ -67,7 +67,7 @@
                     </form>
                 </div>
 
-                <p style="margin-top:1rem;">Prefer email? Contact me at <a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
+                <p class="prefer" style="margin-top:1rem;">Prefer email? Contact me at <a href="mailto:zhouxm@umich.edu">zhouxm@umich.edu</a></p>
             </div>
         </section>
     </main>
@@ -95,34 +95,6 @@
 
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
-
-        const form = document.getElementById('contactForm');
-        const status = document.getElementById('formStatus');
-
-        form.addEventListener('submit', function (e) {
-            e.preventDefault();
-            if (!form.checkValidity()) {
-                form.reportValidity();
-                return;
-            }
-
-            // Simulate successful send (no backend in this site)
-            const name = document.getElementById('name').value;
-            status.style.display = 'block';
-            status.textContent = `Thanks${' ' + (name.split(' ')[0] || '')}! Your message was sent.`;
-
-            // Clear form after a short delay to allow user to read message
-            setTimeout(() => {
-                form.reset();
-            }, 800);
-
-            // Hide status after 6 seconds
-            setTimeout(() => {
-                status.style.display = 'none';
-                status.textContent = '';
-            }, 6000);
-        });
-
     </script>
 </body>
 </html>

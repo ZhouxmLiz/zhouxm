@@ -89,6 +89,11 @@ header {
     color: var(--link-color);
 }
 
+.nav-logo:focus {
+    color: var(--link-color);
+    border: 2px dashed var(--link-color);
+}
+
 .nav-menu {
     display: flex;
     list-style: none;
@@ -105,6 +110,11 @@ header {
 
 .nav-link:hover {
     color: var(--link-color);
+}
+
+.nav-link:focus {
+    color: var(--link-color);
+    border: 2px dashed var(--link-color);
 }
 
 .nav-link.active {
@@ -206,7 +216,7 @@ main {
     margin-top: 1rem;
 }
 
-.cta-button:hover {
+.cta-button:hover, .cta-button:focus {
     background-color: var(--primary-color);
     transform: translateY(-2px);
     box-shadow: var(--shadow-lg);
@@ -229,6 +239,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 2rem;
+    justify-items: end;
 }
 
 .footer-section h3 {
@@ -251,9 +262,8 @@ footer {
     transition: opacity 0.3s ease;
 }
 
-.footer-section a:hover {
-    opacity: 1;
-    text-decoration: underline;
+.footer-section a:hover, .footer-section a:focus {
+    border: #e9ecef 2px dashed;
 }
 
 .copyright {
@@ -377,6 +387,12 @@ footer {
     transform: translateX(5px);
 }
 
+.publication-link:focus {
+    border: 2px dashed var(--primary-color);
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
 /* ==================== */
 /* Contact Form Styles */
 /* ==================== */
@@ -456,6 +472,14 @@ footer {
     margin-top: 1rem;
 }
 
+.prefer a{
+    color: black;
+}
+
+.prefer a:hover, .prefer a:focus {
+    border: #2C3E33 2px dashed;
+}
+
 /* ==================== */
 /* Projects Grid / Cards */
 /* ==================== */
@@ -471,7 +495,7 @@ footer {
     font-weight: 600;
 }
 
-.project-link:hover { color: var(--primary-color); transform: translateX(4px); }
+.project-link:hover, .project-link:focus { color: var(--primary-color); transform: translateX(4px); }
 
 /* ==================== */
 /* Unified list style for About page */
@@ -538,6 +562,10 @@ footer {
 
     .section h2 {
         font-size: 1.5rem;
+    }
+
+    .footer-content {
+        justify-items: center;
     }
 
     .skills-grid {
