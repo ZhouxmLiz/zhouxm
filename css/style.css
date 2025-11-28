@@ -495,7 +495,16 @@ footer {
     font-weight: 600;
 }
 
-.project-link:hover, .project-link:focus { color: var(--primary-color); transform: translateX(4px); }
+.project-link:hover { 
+    color: var(--primary-color); 
+    transform: translateX(4px); 
+}
+
+.project-link:focus {
+    border: 2px dashed var(--primary-color);
+    color: var(--primary-color);
+    transform: translateX(4px);
+}
 
 /* ==================== */
 /* Unified list style for About page */
